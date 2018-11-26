@@ -5,7 +5,7 @@ import './App.css';
   render() {
     return (
       <div className="App">
-        test 14:57 2018/11/26
+        app test 14:57 2018/11/26
       </div>
     );
   }
