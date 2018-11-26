@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
- class pg1 extends Component {
+
+export class pg1 extends Component {
   render() {
     return (
       <div className="pg1">
@@ -11,7 +12,7 @@ import './App.css';
   }
 }
 
-class Hello extends React.Component {
+export class Hello extends React.Component {
   constructor(props) {
     super(props);
     this.state = { msg: 'Hello!' };
@@ -27,7 +28,7 @@ class Hello extends React.Component {
   }
 }
 
-class SampleList extends React.Component {
+export class SampleList extends React.Component {
   render() {
     const airports = [
       { name: "MATSUSHIMA", legion: "TOUHOKU" },
@@ -42,5 +43,3 @@ class SampleList extends React.Component {
     );
   }
 }
-
- export default pg1;
