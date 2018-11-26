@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import pg1 from './pg1';
+import './index.css';
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<pg1 />, document.getElementById('pg1'));
+ReactDOM.render(
+  <h1>Hello world!</h1>,
+  document.getElementById('root')
+);
