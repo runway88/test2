@@ -5,4 +5,4 @@ import pg1 from './pg1';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<pg1 />, document.getElementById('page1'));
+ReactDOM.render(<pg1 />, document.getElementById('pg1'));
