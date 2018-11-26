@@ -39,7 +39,7 @@ export class SampleList extends React.Component {
       <li key={index}>{airport.name} (Legion: {airport.legion})</li>
     );
     return (
-      <ul>{airports}</ul>
+      <ul>{airportList}</ul>
     );
   }
 }
