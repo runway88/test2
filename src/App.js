@@ -6,3 +6,4 @@ render(
     <div>test 14:18 2018/11/26</div>,
     document.getElementById('app')
 );
+export default App;
