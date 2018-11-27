@@ -22,6 +22,8 @@ margin:0;
 color:#313131;
 }
 
+
+
 img{
 outline:none;
 border-style:none;
@@ -211,3 +213,19 @@ footer address{
     letter-spacing: 5px;
 }
 
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 100px;
+}
+
+.contents{
+    flex: 1;
+}
+.footer{
+    height: 100px;
+}
