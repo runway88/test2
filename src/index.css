@@ -46,12 +46,21 @@ a:hover {
     transition: all 0.5s;
 }
 
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*****HEADER*****/
 header{
      /*display: block;*/
     width:60%;
     margin-left: 20%;
     overflow: hidden;
+    height: 100px;
 }
 header h1{
     font-size:120%;
@@ -165,6 +174,7 @@ article h1{
     border-bottom: 1px solid #bababa;
     margin-bottom: 15px;
     float: left;
+    flex: 1;
 }
 article p{
     font-size: 100%;
@@ -205,25 +215,9 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #313131;
+    height: 100px;
 }
 footer address{
     color: #fff;
     letter-spacing: 5px;
-}
-
-.container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.header{
-    height: 100px;
-}
-
-.contents{
-    flex: 1;
-}
-.footer{
-    height: 100px;
 }
