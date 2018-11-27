@@ -97,6 +97,7 @@ nav{
 nav ul{
     width: 100%;
     margin-left: 20%;
+    margin-top: 0%;
 }
 nav li{
     width: calc(25% - 2px);

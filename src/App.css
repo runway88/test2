@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+    width: 60%; /*横幅指定*/
+    background-color: #313131; /*背景色の指定*/
+    overflow: hidden; /*おまじない*/
+    color: #fff; /*文字色の変更*/
+    font-size: 120%; /*フォントサイズの調整*/
+    letter-spacing: 10px; /*文字と文字の間隔をあける*/
+    line-height: 300px; /*行間の指定（ブランディングの高さを決める）*/
+    padding-left: 3%; /*文字の左側に余白をあける*/
+
 }
 
 .App-logo {
