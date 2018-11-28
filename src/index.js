@@ -27,3 +27,8 @@ ReactDOM.render(
   <Hello />,
   document.getElementById('hello')
 );
+
+ReactDOM.render(
+  <CommentBox />,
+  document.getElementById('cmbox')
+);
