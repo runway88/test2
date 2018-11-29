@@ -45,7 +45,8 @@ export class SampleList extends React.Component {
 }
 
 export class CommentBox extends Component{
-  getInitialState() {
+  constructor() {
+    super();	
     return {testValue: "Hello World!!!"};
   }
   handleChange(event) {
