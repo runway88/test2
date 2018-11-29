@@ -49,8 +49,3 @@ export class CommentForm extends React.Component {
     );
   }
 }
-
-React.render(
-  <CommentBox />,
-  document.getElementById('container')
-);
