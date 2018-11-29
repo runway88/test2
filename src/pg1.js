@@ -43,27 +43,3 @@ export class SampleList extends React.Component {
     );
   }
 }
-
-export class CommentBox extends Component{
-  constructor() {
-    super();	
-    return {testValue: "Hello World!!!"};
-  }
-  handleChange(event) {
-    this.setState({
-      testValue: event.target.value
-    });
-  }
-  submitHandler(event) {
-    event.preventDefault();
-    alert(this.state.testValue);
-  }
-  render() {
-    return (
-      <form onSubmit={this.submitHandler}>
-        <input type="text" value={this.state.testValue} onChange = {this.handleChange} />
-        <button type="submit">send</button>
-      </form> 
-    );
-  }
-};

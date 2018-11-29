@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {pg1,SampleList,Hello,CommentBox} from './pg1';
+import {pg1,SampleList,Hello} from './pg1';
+import {Comment,CommentBox,CommentList,CommentForm} from './CommentBox';
 ReactDOM.render(
   <App />,
   document.getElementById('d3')
