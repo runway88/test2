@@ -6,7 +6,7 @@ import './App.css';
     return (
       <div className="App">
         /*app test 14:57 2018/11/26*/
-	img src={`${process.env.PUBLIC_URL}/img/hamanako.png`} alt="hamanako" />;
+	<img src={`${process.env.PUBLIC_URL}/img/hamanako.png`} alt="hamanako" />;
       </div>
     );
   }
