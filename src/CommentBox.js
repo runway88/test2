@@ -1,13 +1,15 @@
 import React from 'react'
+import Marked from 'marked'
 
 export class Comment extends React.Component {
   render() {
+    var rawMarkup = Marked(this.props.children.toString(), {sanitize: true});
     return(
       <div className='comment'>
         <h3 className='commentAuthor'>
           {this.props.author}
         </h3>
-        {this.props.children}
+        <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
       </div>
     );
   }
@@ -31,12 +33,10 @@ export class CommentBox extends React.Component {
 
 export class CommentList extends React.Component {
   render() {
-    return(
-      <div className='commentList'>
-        <Comment author='Pete Hunt'>This is one comment</Comment>
-        <Comment author='Jordan Walke'>This is *another* comment</Comment>
-      </div>
-    );
+    var commentNodes = this.props.data.map((comment)=> {
+      return(<Comment author={comment.author}>{comment.text}</Comment>);
+    });
+    return(<div className='commentList'>{commentNodes}</div>);
   }
 }
 
