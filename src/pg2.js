@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Hello extends React.Component {
+export class GetFrame extends React.Component {
   constructor(props) {
     super(props);
     this.state = { msg: 'Hello!' };
@@ -9,8 +9,33 @@ export class Hello extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.state.msg}</h1>
-        <button onClick={() => this.setState({msg: 'Bye!'})}>Click</button>
+        <header>
+          <h1>TestPage(SPA)</h1>
+        </header>
+        <div class="flex-container">
+        <nav>
+          <ul>
+            <li><div id ="nav1"></div></li>
+            <li><div id ="nav2"></div></li>
+            <li><div id ="nav3"></div></li>
+          </ul>
+        </nav>
+        <article>
+        <section>
+        </section>
+        </article>
+        <aside>
+          <div id="pict"></div>
+        </aside>
+        <!-- /.flex-container --></div>
+        <footer>
+          <address>
+          このウェブページの作者に連絡を取りたい方は、
+          <a href="mailto:info@htmq.com">info@htmq.com</a>までメールをお送りいただくか、
+          <a href="../contact/">お問合わせフォーム</a>からメッセージをお送りください。
+          </address>
+          <p><small>&copy; 2018 hogehoge taro.</small></p>
+        </footer>
       </div>
     );
   }
@@ -48,21 +73,6 @@ export class ModeView extends React.Component {
       <div>
         {this.state.result}
       </div>
-    );
-  }
-}
-export class SampleList extends React.Component {
-  render() {
-    const airports = [
-      { name: "MATSUSHIMA", legion: "TOUHOKU" },
-      { name: "KOMATSU", legion: "HOKURIKU" },
-      { name: "HYAKURI", legion: "KANTO" }
-    ];
-    const airportList = airports.map((airport, index) =>
-      <li key={index}>{airport.name} (Legion: {airport.legion})</li>
-    );
-    return (
-      <ul>{airportList}</ul>
     );
   }
 }

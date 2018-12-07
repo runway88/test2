@@ -2,14 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {pg1,SampleList,Hello} from './pg1';
-import {Comment,CommentBox,CommentList,CommentForm} from './CommentBox';
+import {SampleList,Hello,NavBtn,ModeView} from './pg1';
+import {CommentBox} from './CommentBox';
 
 ReactDOM.render(
   <App />,
   document.getElementById('d3')
 );
-
+const modeview = ReactDOM.render(
+  <ModeView />,
+  document.getElementById('pict')
+);
+ReactDOM.render(
+  <NavBtn mode="mode1" mv={modeview}/>,
+  document.getElementById('nav1')
+);
+ReactDOM.render(
+  <NavBtn mode="mode2" mv={modeview}/>,
+  document.getElementById('nav2')
+);
+ReactDOM.render(
+  <NavBtn mode="mode3" mv={modeview}/>,
+  document.getElementById('nav3')
+);
 ReactDOM.render(
   <h1>root 16:34 2018/11/26</h1>,
   document.getElementById('root')
@@ -19,6 +34,7 @@ ReactDOM.render(
   <h1>test 16:35 2018/11/26</h1>,
   document.getElementById('test')
 );
+
 
 ReactDOM.render(
   <SampleList />,

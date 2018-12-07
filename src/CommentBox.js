@@ -16,9 +16,10 @@ export class Comment extends React.Component {
 }
 
 export class CommentBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return(
