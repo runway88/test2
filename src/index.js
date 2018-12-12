@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {SampleList,Hello,NavBtn,ModeView} from './pg1';
+import {PageChangeBtn,PageView} from './pg2';
 import {CommentBox} from './CommentBox';
 
 ReactDOM.render(
@@ -24,6 +25,18 @@ ReactDOM.render(
 ReactDOM.render(
   <NavBtn mode="mode3" mv={modeview}/>,
   document.getElementById('nav3')
+);
+const pageview = ReactDOM.render(
+  <PageView />,
+  document.getElementById('pg')
+);
+ReactDOM.render(
+  <PageChangeBtn page="pg1" pv={pageview}/>,
+  document.getElementById('nav4')
+);
+ReactDOM.render(
+  <PageChangeBtn page="pg2" pv={pageview}/>,
+  document.getElementById('nav5')
 );
 ReactDOM.render(
   <h1>root 16:34 2018/11/26</h1>,

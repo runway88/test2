@@ -51,6 +51,7 @@ export class ModeView extends React.Component {
     );
   }
 }
+
 export class SampleList extends React.Component {
   render() {
     const airports = [
